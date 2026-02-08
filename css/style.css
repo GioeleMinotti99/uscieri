@@ -84,3 +84,67 @@ header {
   max-width: 90%;
   border-radius: 8px;
 }
+#fab-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+#fab-main {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+#fab-options {
+  display: none; /* Nascosto di default */
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+
+.fab-item {
+  display: flex;
+  align-items: center;
+}
+
+.fab-label {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+.fab-sub-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Colori specifici per tipo di emergenza */
+.medical { background: #e74c3c; }      /* Rosso */
+.non-medical { background: #f39c12; }  /* Arancione */
+.police { background: #2980b9; }       /* Blu */
+.journalists { background: #9b59b6; }  /* Viola */
