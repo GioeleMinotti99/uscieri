@@ -1,4 +1,4 @@
-const PASSWORD = "CAMBIA_QUESTA_PASSWORD";
+const PASSWORD = "prova";
 const TOKEN_KEY = "uscieri_auth";
 
 const maps = {
