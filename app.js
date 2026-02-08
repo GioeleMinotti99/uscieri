@@ -1,4 +1,4 @@
-const PASSWORD = "prova1";
+const PASSWORD = "prova";
 const TOKEN_KEY = "uscieri_auth";
 
 const maps = {
