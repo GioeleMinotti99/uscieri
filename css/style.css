@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+}
+
+#login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#login button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#login-error {
+  color: red;
+}
+
+#app {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+#map-container {
+  position: relative;
+  width: 100%;
+}
+
+#map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.point {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: #00aaff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+#popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-content {
+  background: white;
+  padding: 20px;
+  max-width: 90%;
+  border-radius: 8px;
+}
