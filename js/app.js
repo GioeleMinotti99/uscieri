@@ -95,3 +95,28 @@ function closePopup() {
 if (localStorage.getItem(TOKEN_KEY)) {
   showApp();
 }
+
+function toggleFab() {
+  const options = document.getElementById("fab-options");
+  const mainBtn = document.getElementById("fab-main");
+  
+  if (options.style.display === "flex") {
+    options.style.display = "none";
+    mainBtn.innerText = "?";
+    mainBtn.style.background = "#222";
+  } else {
+    options.style.display = "flex";
+    mainBtn.innerText = "✕"; // Cambia in una X quando è aperto
+    mainBtn.style.background = "#555";
+  }
+}
+
+// Chiudi il menù se l'utente clicca fuori (opzionale)
+window.addEventListener('click', function(e) {
+  const container = document.getElementById('fab-container');
+  if (!container.contains(e.target)) {
+    document.getElementById("fab-options").style.display = "none";
+    document.getElementById("fab-main").innerText = "?";
+    document.getElementById("fab-main").style.background = "#222";
+  }
+});
